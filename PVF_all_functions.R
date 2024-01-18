@@ -20,7 +20,7 @@ mean_sd <- function(x){ return (list(ymin=mean(x) -sd(x),y=mean(x), ymax=mean(x)
 qrange <- function(r){return(function(x) list(ymin=quantile(x,(100-r)/200), y=quantile(x,.5), ymax=quantile(x,1-(100-r)/200)))}
 
 manual_data <- read_excel("Radboud/Third year/Thesis/PVF_cluster_numbers.xlsx")
-pwld_data <- read_excel("Radboud/Third year/Thesis/WPSS_data.xlsx")
+pwld_data <- read_excel("Radboud/Third year/Thesis/PWLD_data.xlsx")
 pwld_data$Mean_cluster_size1 <- pwld_data$Mean_cluster_size1-1
 
 data = manual_data #choose one of the two data sets
