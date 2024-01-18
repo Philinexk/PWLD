@@ -256,7 +256,7 @@ def sub_cluster(cluster, clusters):
             return True
     return False # it is not a subcluster, and the cluster will be added to clusters
 
-def analyze_clusters(clusters): #this function was made for me to make analyzing each cluster easier.
+def analyze_clusters(clusters): #this function was made for me to make analyzing the clusters easier.
     total_clusters = 0
     total_words = 0
     cluster_sizes = []
