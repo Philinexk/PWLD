@@ -19,7 +19,7 @@ library(stargazer)
 mean_sd <- function(x){ return (list(ymin=mean(x) -sd(x),y=mean(x), ymax=mean(x))+sd(x))}
 qrange <- function(r){return(function(x) list(ymin=quantile(x,(100-r)/200), y=quantile(x,.5), ymax=quantile(x,1-(100-r)/200)))}
 
-manual_data <- read_excel("Radboud/Third year/Thesis/PVF_cluster_numbers.xlsx")
+manual_data <- read_excel("Radboud/Third year/Thesis/manual_clustering.xlsx")
 pwld_data <- read_excel("Radboud/Third year/Thesis/PWLD_data.xlsx")
 pwld_data$Mean_cluster_size1 <- pwld_data$Mean_cluster_size1-1
 
