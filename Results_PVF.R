@@ -1,6 +1,6 @@
 pwld_data <- read_excel("Radboud/Third year/Thesis/PWLD_data.xlsx")
 pwld_data$Mean_cluster_size1 <- pwld_data$Mean_cluster_size1-1
-manual_data <- read_excel("Radboud/Third year/Thesis/manual_clustering.xlsx")
+manual_data <- read_excel("Radboud/Third year/Thesis/Manual_data.xlsx")
 
 young_pvf <- filter(manual_data, age < 50)
 old_pvf <- filter(manual_data, age >= 50)
